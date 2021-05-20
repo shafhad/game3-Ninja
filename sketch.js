@@ -68,8 +68,9 @@ function setup() {
   InvisibleGround = createSprite(displayWidth/2,displayHeight/2 +280,displayWidth,10);
 
    Ninja1 = createSprite(displayWidth/2-500, displayHeight/2+200, 10, 10);
-  //  Ninja1.addAnimation("jump", NinjaJump);
+
    Ninja1.addAnimation("running", NinjaRun);
+   Ninja1.addAnimation("jump", NinjaJump);
    
    Ninja1.scale = 2.5;
    
@@ -122,4 +123,3 @@ function draw() {
 
   drawSprites();
 }
- 
